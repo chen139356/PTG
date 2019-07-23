@@ -1,0 +1,655 @@
+body{
+    overflow-x: hidden;
+}
+.navList li:nth-child(4){
+	border: 3px solid black;
+}
+.firstBox{
+	position: relative;
+	width: 100%;
+	height: 450px;
+	background-color: #1D1D1D;
+}
+/*设置文字样式*/
+.fir-left{
+	width: 35%;
+	height: 100%;
+	text-align: center;
+	line-height: 70px;
+	float: left;
+	font-family:"楷体";
+	color: rgba(1, 204, 255, 0.788);
+}
+.fir-left h1{
+	line-height: 100px;
+	font-size: 35px;
+	font-weight: bold;
+}
+.fir-left p{
+	font-size: 23px;
+}
+/*右边div*/
+.fir-right{
+	position: absolute;
+	left: 40%;
+	width: 50%;
+	height: 100%;
+}
+/*照片面板*/
+.fengjing-photo{
+	width: 500px;
+	height: 310px;
+	position: absolute;
+	background: rgba(1, 204, 255, 0.788);
+	/*border: 2px solid red;*/
+	top: 25px;
+	left: 20%;
+	transform: rotate(-20deg);
+}
+.fengjing-photo-list{
+	list-style: none;
+	
+}
+.fengjing-photo-list li{
+	position: absolute;
+	top: -10px;
+	left: -20px;
+	opacity: 0;
+	
+}
+.fengjing-photo-list li img{
+	width: 98%;
+	height: 98%;
+}
+/*照片变化*/
+.fengjing-photo-list li:nth-child(1){
+	animation: photoMove1 20s linear infinite;
+}
+@keyframes photoMove1{
+	0%{opacity: 0;}
+	5%{opacity: 1;}
+	10%{opacity: 1;}
+	15%{opacity: 0;}
+}
+.fengjing-photo-list li:nth-child(2){
+	animation: photoMove2 20s linear infinite;
+}
+@keyframes photoMove2{
+	10%{opacity: 0;}
+	15%{opacity: 1;}
+	20%{opacity: 1;}
+	25%{opacity: 0;}
+}
+.fengjing-photo-list li:nth-child(3){
+	animation: photoMove3 20s linear infinite;
+}
+@keyframes photoMove3{
+	20%{opacity: 0;}
+	25%{opacity: 1;}
+	30%{opacity: 1;}
+	35%{opacity: 0;}
+}
+.fengjing-photo-list li:nth-child(4){
+	animation: photoMove4 20s linear infinite;
+}
+@keyframes photoMove4{
+	30%{opacity: 0;}
+	35%{opacity: 1;}
+	40%{opacity: 1;}
+	45%{opacity: 0;}
+}
+.fengjing-photo-list li:nth-child(5){
+	animation: photoMove5 20s linear infinite;
+}
+@keyframes photoMove5{
+	40%{opacity: 0;}
+	45%{opacity: 1;}
+	50%{opacity: 1;}
+	55%{opacity: 0;}
+}
+.fengjing-photo-list li:nth-child(6){
+	animation: photoMove6 20s linear infinite;
+}
+@keyframes photoMove6{
+	50%{opacity: 0;}
+	55%{opacity: 1;}
+	60%{opacity: 1;}
+	65%{opacity: 0;}
+}
+.fengjing-photo-list li:nth-child(7){
+	animation: photoMove7 20s linear infinite;
+}
+@keyframes photoMove7{
+	60%{opacity: 0;}
+	65%{opacity: 1;}
+	70%{opacity: 1;}
+	75%{opacity: 0;}
+}
+.fengjing-photo-list li:nth-child(8){
+	animation: photoMove8 20s linear infinite;
+}
+@keyframes photoMove8{
+	70%{opacity: 0;}
+	75%{opacity: 1;}
+	80%{opacity: 1;}
+	85%{opacity: 0;}
+}
+.fengjing-photo-list li:nth-child(9){
+	animation: photoMove9 20s linear infinite;
+}
+@keyframes photoMove9{
+	80%{opacity: 0;}
+	85%{opacity: 1;}
+	90%{opacity: 1;}
+	95%{opacity: 0;}
+}
+.fengjing-photo-list li:nth-child(10){
+	animation: photoMove10 20s linear infinite;
+}
+@keyframes photoMove10{
+	90%{opacity: 0;}
+	95%{opacity: 1;}
+	100%{opacity: 1;}
+	5%{opacity: 0;}
+}
+/*斜线1*/
+.line1{
+	top: 50px;
+	left: -80px;
+	position: absolute;
+	width: 500px;
+	height: 10px;
+	transform: rotate(-20deg);
+	background: rgba(1, 204, 255, 0.788);
+	border-radius: 20px;
+}
+/*斜线2*/
+.line2{
+	left: 80px;
+	position: absolute;
+	width: 10px;
+	height: 400px;
+	transform: rotate(-20deg);
+	background: rgba(1, 204, 255, 0.788);
+	border-radius: 20px;
+}
+/*三角1*/
+.snajiao11{
+	width: 100%;
+	height: 100px;
+	position: relative;
+}
+.sanjiao11 img{
+	width: 100%;
+	height: 100px;
+	position: absolute;
+	z-index: 2;
+}
+.orange1{
+	position: relative;
+	top: 0px;
+	width: 100%;
+	height: 1300px;
+	background: url(../img/dsgag.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+/*佳片欣赏*/
+.jiapian{
+	position: absolute;
+	top: 150px;
+	width: 100%;
+	height: 100px;
+	font-size: 30px;
+	text-align: center;
+}
+.jiapian h1{
+	position: absolute;
+	left: 35%;
+	width:500px;
+	border-radius: 50px;
+}
+/*随机图片*/
+.keBack{
+	position: relative;
+	width: 100%;
+	height: 600px;
+	top: 280px;
+
+}
+.p1 img{
+	top: 5%;
+	left: 5%;
+	position: absolute;
+	width: 90%;
+	height: 90%;
+}
+.p1:nth-child(1){
+	position: absolute;
+	width: 330px;
+	height: 230px;
+	transform: rotate(-20deg);
+	top: 120px;
+	left: 150px;
+}
+
+.p1:nth-child(2){
+	position: absolute;
+	width: 330px;
+	height: 230px;
+	transform: rotate(20deg);
+	top: 120px;
+	left: 550px;
+}
+
+.p1:nth-child(3){
+	position: absolute;
+	width: 330px;
+	height: 230px;
+	transform: rotate(-35deg);
+	top: 120px;
+	left: 1000px;
+}
+
+.p1:nth-child(4){
+	position: absolute;
+	width: 330px;
+	height: 230px;
+	transform: rotate(30deg);
+	top: 380px;
+	left: 160px;
+}
+
+.p1:nth-child(5){
+	position: absolute;
+	width: 330px;
+	height: 230px;
+	transform: rotate(0deg);
+	top: 420px;
+	left: 450px;
+}
+
+.p1:nth-child(6){
+	position: absolute;
+	width: 330px;
+	height: 230px;
+	transform: rotate(50deg);
+	top: 450px;
+	left: 750px;
+}
+
+.p1:nth-child(7){
+	position: absolute;
+	width: 330px;
+	height: 230px; 
+	transform: rotate(-10deg);
+	top: 420px;
+	left: 1120px;
+}
+
+.p1:nth-child(8){
+	position: absolute;
+	width: 330px;
+	height: 230px;
+	transform: rotate(-10deg);
+	top: 650px;
+	left: 260px;
+}
+
+.p1:nth-child(9){
+	position: absolute;
+	width: 330px;
+	height: 230px;
+	transform: rotate(30deg);
+	top: 660px;
+	left: 900px;
+}
+/*获取焦点的事件放大并调正*/
+.p1{
+	transition: all 2s;
+}
+.p1:hover{
+	transform: rotate(0deg);
+	transform: scale(2);
+	z-index: 3;
+}
+
+/*分割1*/
+.fenge{
+	top: 100px;
+	width: 100%;
+	height: 30px;
+	position: relative;
+}
+.fenge img{
+	width: 40%;
+	height: 100%;
+	margin-left: 30%;
+	position: absolute;
+	
+}
+/*分割2*/
+.fenge2{
+	top: 100px;
+	width: 100%;
+	height: 30px;
+	position: relative;
+}
+.fenge2 img{
+	width: 40%;
+	height: 100%;
+	margin-left: 30%;
+	position: absolute;
+	
+}
+/*选项卡部分*/
+.pTab{
+	width:100%;
+	height: 800px;
+	position: relative;
+	top:150px;
+	left: 150px;
+	
+}
+.pTab ul li{
+	float: left;
+	list-style: none;
+	
+}
+
+.pTab ul li a{
+	width: 150px;
+	height: 50px;
+	display: inline-block;
+	background:rgba(1, 204, 255, 0.788);
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	line-height: 50px;
+	font-size: 20px;
+	margin-left:20px;
+	transition: all 2s;
+	border-radius: 20px;
+	
+}
+.pTab ul div{
+	width: 100%;
+	height: 700px;
+	left:10px;
+	position: absolute;
+	display: none;
+}
+.pTab ul .jianzhuP{
+	display: block;
+}
+.pTab ul li:hover div{
+	display:block ;
+}
+.pTab ul li a:hover{
+	background: #1D1D1D;
+	color: white;
+}
+.pTab ul li div ul li{
+	float: left;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+/*设置图片大小边框圆边*/
+.jianzhuP ul li{
+	width: 400px;
+	height: 300px;
+	border: 1PX solid rgba(1, 204, 255, 0.788);
+	border-top-left-radius: 60px;
+	border-bottom-right-radius: 60px;
+	transition: all 2s;
+}
+.jianzhuP ul li img{
+	width: 100%;
+	height: 100%;
+	border-top-left-radius: 60px;
+	border-bottom-right-radius: 60px;
+}
+.sijiP ul li{
+	width: 400px;
+	height: 300px;
+	border: 1PX solid rgba(1, 204, 255, 0.788);
+	border-top-left-radius: 60px;
+	border-bottom-right-radius: 60px;
+	transition: all 2s;
+}
+.sijiP ul li img{
+	width: 100%;
+	height: 100%;
+	border-top-left-radius: 60px;
+	border-bottom-right-radius: 60px;
+}
+.ziranP ul li{
+	width: 400px;
+	height: 300px;
+	border: 1PX solid rgba(1, 204, 255, 0.788);;
+	border-top-left-radius: 60px;
+	border-bottom-right-radius: 60px;
+	transition: all 2s;
+}
+.ziranP ul li img{
+	width: 100%;
+	height: 100%;
+	border-top-left-radius: 60px;
+	border-bottom-right-radius: 60px;
+}
+/*鼠标移入图片事件*/
+.jianzhuP ul li:hover {
+	transform: scale(1.5);
+	background: rgba(225,225,13,0.3);
+}
+.sijiP ul li:hover {
+	transform: scale(1.5);
+	background: rgba(225,225,13,0.3);
+}
+.ziranP ul li:hover {
+	transform: scale(1.5);
+}
+/*文章2*/
+.wenzhang2{
+	width: 100%;
+	height: 400px;
+	position: relative;
+	top: 100px;
+	text-align: center;
+	line-height: 60px;
+}
+/*最后一部分*/
+.box{
+	width: 100%;
+	height: 800px;
+	position: relative;
+	
+	top: 100px;
+}
+/*图片部分*/
+.fengjing2{
+	width: 500px;
+	height: 334px;
+	position: absolute;
+	background: orange;
+	/*border: 2px solid red;*/
+	top: 150px;
+	left: 10%;
+	border-radius: 20px;
+	transition: all 2s;
+	z-index: 2;
+}
+.fengjing2-list{
+	list-style: none;
+	
+}
+.fengjing2-list li{
+	position: absolute;
+	width: 500px;
+	height: 334px;
+	border-radius: 20px;
+	opacity: 0;
+	
+}
+/*鼠标移入放大*/
+.fengjing2:hover {
+	animation-play-state: paused;
+	transform: scale(1.5);
+}
+.fengjing2-list li img{
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+}
+/*照片变化*/
+.fengjing2-list li:nth-child(1){
+	animation: photoMove1 20s linear infinite;
+}
+@keyframes photoMove1{
+	0%{opacity: 0;}
+	5%{opacity: 1;}
+	10%{opacity: 1;}
+	15%{opacity: 0;}
+}
+.fengjing2-list li:nth-child(2){
+	animation: photoMove2 20s linear infinite;
+}
+@keyframes photoMove2{
+	10%{opacity: 0;}
+	15%{opacity: 1;}
+	20%{opacity: 1;}
+	25%{opacity: 0;}
+}
+.fengjing2-list li:nth-child(3){
+	animation: photoMove3 20s linear infinite;
+}
+@keyframes photoMove3{
+	20%{opacity: 0;}
+	25%{opacity: 1;}
+	30%{opacity: 1;}
+	35%{opacity: 0;}
+}
+.fengjing2-list li:nth-child(4){
+	animation: photoMove4 20s linear infinite;
+}
+@keyframes photoMove4{
+	30%{opacity: 0;}
+	35%{opacity: 1;}
+	40%{opacity: 1;}
+	45%{opacity: 0;}
+}
+.fengjing2-list li:nth-child(5){
+	animation: photoMove5 20s linear infinite;
+}
+@keyframes photoMove5{
+	40%{opacity: 0;}
+	45%{opacity: 1;}
+	50%{opacity: 1;}
+	55%{opacity: 0;}
+}
+.fengjing2-list li:nth-child(6){
+	animation: photoMove6 20s linear infinite;
+}
+@keyframes photoMove6{
+	50%{opacity: 0;}
+	55%{opacity: 1;}
+	60%{opacity: 1;}
+	65%{opacity: 0;}
+}
+.fengjing2-list li:nth-child(7){
+	animation: photoMove7 20s linear infinite;
+}
+@keyframes photoMove7{
+	60%{opacity: 0;}
+	65%{opacity: 1;}
+	70%{opacity: 1;}
+	75%{opacity: 0;}
+}
+.fengjing2-list li:nth-child(8){
+	animation: photoMove8 20s linear infinite;
+}
+@keyframes photoMove8{
+	70%{opacity: 0;}
+	75%{opacity: 1;}
+	80%{opacity: 1;}
+	85%{opacity: 0;}
+}
+.fengjing2-list li:nth-child(9){
+	animation: photoMove9 20s linear infinite;
+}
+@keyframes photoMove9{
+	80%{opacity: 0;}
+	85%{opacity: 1;}
+	90%{opacity: 1;}
+	95%{opacity: 0;}
+}
+.fengjing2-list li:nth-child(10){
+	animation: photoMove10 20s linear infinite;
+}
+@keyframes photoMove10{
+	90%{opacity: 0;}
+	95%{opacity: 1;}
+	100%{opacity: 1;}
+	5%{opacity: 0;}
+}
+/*文字部分*/
+.miaoshu{
+	width: 580PX;
+	height: 300PX;
+	position: absolute;
+	top: 150PX;
+	right: 200PX;
+	font-family: "楷体";
+	line-height: 60px;
+}
+.miaoshu h1{
+	font-size: 30px;
+	font-weight: bold;
+	color:rgba(1, 204, 255, 0.788);
+}
+
+/*装饰线*/
+.heng1{
+	width: 100%;
+	height: 10px;
+	background: rgba(1, 204, 255, 0.788);
+	border-radius: 10px;
+	position: absolute;
+	top: 70px;
+}
+.shu1{
+	width: 20px;
+	height: 635px;
+	position: absolute;
+	background:rgba(1, 204, 255, 0.788);
+	border-radius: 10px;
+	left: 50px;
+}
+.heng2{
+	width: 100%;
+	height: 10px;
+	background:rgba(1, 204, 255, 0.788);
+	border-radius: 10px;
+	position: absolute;
+	top: 560px;
+}
+.shu2{
+	width: 20px;
+	height: 635px;
+	position: absolute;
+	background: rgba(1, 204, 255, 0.788);
+	border-radius: 10px;
+	right: 50px;
+}
+.fenge3{
+	top: 600px;
+	width: 100%;
+	height: 30px;
+	position: relative;
+}
+.fenge3 img{
+	width: 40%;
+	height: 100%;
+	margin-left: 30%;
+	position: absolute;
+	
+}

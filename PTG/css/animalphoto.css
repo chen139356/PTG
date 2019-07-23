@@ -1,0 +1,549 @@
+.navList li:nth-child(5){
+	border: 3px solid black;
+}
+body{
+    overflow-x: hidden;
+}
+.photoBox{
+	width: 100%;
+	height:450px;
+	background: #1D1D1D;
+	position: relative;
+	top:0px;
+}
+.photo-left{
+	position: absolute;
+	left: 200px;
+	width: 35%;
+	height: 100%;
+	text-align: center;
+	line-height: 70px;
+	float: left;
+	font-family:"楷体";
+	color: rgba(1, 204, 255, 0.788);
+}
+.photo-left h1{
+	line-height: 100px;
+	font-size: 35px;
+	font-weight: bold;
+}
+.photo-left p{
+	font-size: 23px;
+}
+.photo-right{
+	position: absolute;
+	width: 5%;
+	height: 350px;
+	left: 60%;
+	float: left;
+	z-index: 1;
+}
+/*.pTabs{
+	width:100%;
+	height: 800px;
+	position: relative;
+	top:0px;
+	background: url(../img/railway.jpg);
+}
+.pTabs ul{
+	position: absolute;
+	top: 20px;
+}
+.pTabs ul li{
+	float: left;
+	list-style: none;
+}
+.pTabs ul li a{
+	width: 150px;
+	height: 50px;
+	display: inline-block;
+	background:#1D1D1D;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	line-height: 50px;
+	font-size: 20px;
+	margin-left:20px;
+	transition: all 2s;
+}
+.pTabs ul div{
+	width: 100%;
+	height: 700px;
+	left:10px;
+	position: absolute;
+	display: none;
+}
+.pTabs ul .weddingP{
+	display: block;
+}
+.pTabs ul li:hover div{
+	display:block ;
+}
+.pTabs ul li a:hover{
+	background: orange;
+	color: white;
+}
+.pTabs ul li div ul li{
+	float: left;
+	margin-top: 10px;
+	margin-left: 10px;
+}*/
+/*-------------------------------------------------------------------------*/
+.pTabs{
+	width:100%;
+	height: 800px;
+	position: relative;
+	top:50px;
+	left: 150px;
+	
+}
+.pTabs ul li{
+	float: left;
+	list-style: none;
+	
+}
+
+.pTabs ul li a{
+	width: 150px;
+	height: 50px;
+	display: inline-block;
+	background:rgba(1, 204, 255, 0.788);
+	color: gray;
+	text-decoration: none;
+	text-align: center;
+	line-height: 50px;
+	font-size: 20px;
+	margin-left:20px;
+	transition: all 2s;
+	border-radius: 20px;
+	
+}
+.pTabs ul div{
+	width: 100%;
+	height: 700px;
+	left:10px;
+	position: absolute;
+	display: none;
+}
+.pTabs ul .maokeP{
+	display: block;
+}
+.pTabs ul li:hover div{
+	display:block ;
+}
+.pTabs ul li a:hover{
+	background: #1D1D1D;
+	color: white;
+}
+.pTabs ul li div ul li{
+	float: left;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+/*设置图片大小边框圆边*/
+.maokeP ul li{
+	width: 400px;
+	height: 300px;
+	border: 1PX solid rgba(1, 204, 255, 0.788);
+	border-top-left-radius: 60px;
+	border-bottom-right-radius: 60px;
+	transition: all 2s;
+}
+.maokeP ul li img{
+	width: 100%;
+	height: 100%;
+	border-top-left-radius: 60px;
+	border-bottom-right-radius: 60px;
+}
+.buruP ul li{
+	width: 400px;
+	height: 300px;
+	border: 1PX solid rgba(1, 204, 255, 0.788);
+	border-top-left-radius: 60px;
+	border-bottom-right-radius: 60px;
+	transition: all 2s;
+}
+.buruP ul li img{
+	width: 100%;
+	height: 100%;
+	border-top-left-radius: 60px;
+	border-bottom-right-radius: 60px;
+}
+.shicaoP ul li{
+	width: 400px;
+	height: 300px;
+	border: 1PX solid rgba(1, 204, 255, 0.788);
+	border-top-left-radius: 60px;
+	border-bottom-right-radius: 60px;
+	transition: all 2s;
+}
+.shicaoP ul li img{
+	width: 100%;
+	height: 100%;
+	border-top-left-radius: 60px;
+	border-bottom-right-radius: 60px;
+}
+/*鼠标移入图片事件*/
+.maokeP ul li:hover {
+	transform: scale(1.5);
+}
+.buruP ul li:hover {
+	transform: scale(1.5);
+	
+}
+.shicaoP ul li:hover {
+	transform: scale(1.5);
+}
+
+
+
+/*---------------------------------------------------------------------*/
+.demandBox{
+	width: 100%;
+	height: 334px;
+	position: relative;
+	top: 200px;
+}
+.demand{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: -130px;
+	left: 0px;
+	text-align: center;
+}	
+.kill{
+	width: 100%;
+	height: 1000px;
+	position:relative;
+}
+.kill-in{
+	width: 100%;
+	height: 100%;
+	list-style: none;
+	position: absolute;
+	top: 1800px;
+	left: 10%;
+}
+.kill-in li{
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+	color: white;
+	line-height: 495px;
+	text-align: center;
+}
+.kill-in li:nth-child(1){
+	width: 400px;
+	height: 300px;
+	background: url(../img/eyu.jpg) no-repeat;
+	background-size: 400px 300px;
+}
+.kill-in li:nth-child(1):hover .div1{
+	opacity: 1;
+}
+.div1{
+	size: 400px 300px;
+    background: rgba(255,192,1,0.5);
+    opacity: 0;
+    position: absolute;
+    transition: all 3s;
+}
+.content1{
+	width:400px;
+	height: 300px;
+	border: 1px solid #1D1D1D;
+	position: absolute;
+	/*left:20px;
+	top:20px;*/	
+}
+
+.kill-in li:nth-child(2){
+	width: 400px;
+	height: 300px;
+	background: url(../img/daxiang.jpg) no-repeat;
+	background-size: 400px 300px;
+}
+.kill-in li:nth-child(2):hover .div2{
+	opacity: 1;
+}
+.div2{
+	width:400px;
+	height: 300px;
+    background: rgba(255,192,1,0.5);
+    opacity: 0;
+    position: absolute;
+    transition: all 3s;
+}
+ .content2{
+	width:400px;
+	height: 300px;
+	border: 1px solid #1D1D1D;
+	position: absolute;
+
+}
+.kill-in li:nth-child(3){
+	width: 400px;
+	height: 300px;
+	background: url(../img/shayu.jpg) no-repeat;
+	background-size: 400px 300px;
+}
+.kill-in li:nth-child(3):hover .div3{
+	opacity: 1;
+}
+.div3{
+	width: 400px;
+	height: 300px;
+    background: rgba(255,192,1,0.5);
+    opacity: 0;
+    position: absolute;
+    transition: all 3s;
+}
+ .content3{
+	width:400px;
+	height: 300px;
+	border: 1px solid #1D1D1D;
+	position: absolute;
+	
+}
+.kill-in li:nth-child(4){
+	width: 400px;
+	height: 300px;
+	background: url(../img/xiniu.jpg) no-repeat;
+	background-size: 400px 300px;
+}
+.kill-in li:nth-child(4):hover .div4{
+	opacity: 1;
+}
+.div4{
+	width: 400px;
+	height: 300px;
+    background: rgba(255,192,1,0.5);
+    opacity: 0;
+    position: absolute;
+    transition: all 3s;
+}
+ .content4{
+	width:400px;
+	height: 300px;
+	border: 1px solid #1D1D1D;
+	position: absolute;
+	
+}
+.kill-in li:nth-child(5){
+	width: 400px;
+	height: 300px;
+	background: url(../img/baihu2.jpg) no-repeat;
+	background-size: 400px 300px;
+}
+.kill-in li:nth-child(5):hover .div5{
+	opacity: 1;
+}
+.div5{
+	width: 400px;
+	height: 300px;
+    background: rgba(255,192,1,0.5);
+    opacity: 0;
+    position: absolute;
+    transition: all 3s;
+}
+ .content5{
+	width:400px;
+	height: 300px;
+	border: 1px solid #1D1D1D;
+	position: absolute;
+	
+}
+.kill-in li:nth-child(6){
+	width: 400px;
+	height: 300px;
+	background: url(../img/2.jpg) no-repeat;
+	background-size: 400px 300px;
+}
+.kill-in li:nth-child(6):hover .div6{
+	opacity: 1;
+}
+.div6{
+	width: 400px;
+	height: 300px;
+    background: rgba(255,192,1,0.5);
+    opacity: 0;
+    position: absolute;
+    transition: all 3s;
+}
+ .content6{
+	width:400px;
+	height: 300px;
+	border: 1px solid #1D1D1D;
+	position: absolute;
+		
+}
+.kill-in li:nth-child(7){
+	width: 400px;
+	height: 300px;
+	background: url(../img/4.jpg) no-repeat;
+	background-size: 400px 300px;
+}
+.kill-in li:nth-child(7):hover .div6{
+	opacity: 1;
+}
+.div7{
+	width: 400px;
+	height: 300px;
+    background: rgba(255,192,1,0.5);
+    opacity: 0;
+    position: absolute;
+    transition: all 3s;
+}
+ .content7{
+	width:400px;
+	height: 300px;
+	border: 1px solid #1D1D1D;
+	position: absolute;
+
+}
+.kill-in li:nth-child(8){
+	width: 400px;
+	height: 300px;
+	background: url(../img/milu.jpg) no-repeat;
+	background-size: 400px 300px;
+}
+.kill-in li:nth-child(8):hover .div6{
+	opacity: 1;
+}
+.div8{
+	width: 400px;
+	height: 300px;
+    background: rgba(255,192,1,0.5);
+    opacity: 0;
+    position: absolute;
+    transition: all 3s;
+}
+/*图片大小设置*/
+.content1 img{
+	width: 100%;
+	height: 100%;
+}
+.content2 img{
+	width: 100%;
+	height: 100%;
+}
+.content3 img{
+	width: 100%;
+	height: 100%;
+}
+.content4 img{
+	width: 100%;
+	height: 100%;
+}
+.content5 img{
+	width: 100%;
+	height: 100%;
+}
+.content6 img{
+	width: 100%;
+	height: 100%;
+}
+
+.remainBox{
+	width: 100%;
+	height: 334px;
+	position: relative;
+}
+.remain{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 2500px;
+	left: 0px;
+	text-align: center;
+}
+.xiesanjiao{
+	width: 100%;
+	height: 150px;
+	position: relative;
+	top: 1200px;
+	margin: 0;
+}
+.xiesanjiao .imgsss{
+	width: 100%;
+	height: 100%;
+}
+.newBox{
+	width: 100%;
+	height: 1000px;
+	top: -5px;
+	position: relative;
+	background: #1D1D1D;	
+}
+.newtop{
+	width: 100%;
+	height: 900px;
+	position: absolute;
+}
+.brdw1{
+	width: 25%;
+	height: 100%;
+	position: absolute;
+	top: 8%;
+	left: 5%;	
+	color: white;
+	text-align: center;
+}
+.brdw1 img{
+	border-radius: 50%;
+	overflow: hidden;
+}
+.brdw1 p{
+	font-size: 13px;
+	text-align: left;
+	margin-left: 80px;
+}
+.brdw2 p{
+	font-size: 12px;
+	text-align: left;
+	margin-left: 80px;
+}
+.brdw3 p{
+	font-size: 13px;
+	text-align: left;
+	margin-left: 80px;
+}
+	
+.brdw2{
+	width: 25%;
+	height: 100%;
+	position: absolute;
+	top: 8%;
+	left: 35%;
+	color: white;
+	text-align: center;	
+}
+.brdw2 img{
+	border-radius: 50%;
+	overflow: hidden;
+}
+.brdw3{
+	width: 25%;
+	height: 100%;
+	position: absolute;
+	top: 8%;
+	right: 5%;
+	color: white;	
+	text-align: center;
+}
+.brdw3 img{
+	border-radius: 50%;
+	overflow: hidden;
+}
+.newbottum{
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+}	
+.newbottum img{
+	width: 100%;
+}
+.f{
+	margin-top: -7px;
+}
