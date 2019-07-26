@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/login.css"/>
+</head>
+<body> 
+    <div class="flex-w">
+        <div id="login-flex">
+            <div class="off">
+                <i class="fa fa-times"></i>
+            </div>
+            <div class="flex-top">
+                <span style="border-bottom: 2px solid #E40078;color: #E40078;" data-index="0" class="flex-top-left">短信登录</span>
+                <p>|</p>
+                <span data-index="1" class="flex-top-right">密码登录</span>
+            </div>
+            <div class="test"><i class="fa fa-exclamation-circle"></i> 用户名或密码错误!</div>
+            <div class="flex-bottom">
+                    <div class="flex-bottom-left flex-block">
+                        <input type="text" maxlength="11" name="phone" id="phone" value="" placeholder="手机号"/>
+                        <span><input maxlength="5" type="text" name="yzm" id="yzm" value="" placeholder="请输入验证码"/><input type="button" name="yzm-btn" id="yzm-btn" value="获取验证码" /></span>
+                        <button>登录</button>
+                        <a href="javascript:;" class="flex-login-img">
+                            
+                        </a>
+                    </div>
+                    <div class="flex-bottom-right">
+                        <input type="text" maxlength="11" name="phone-emal-name" id="phone-emal-name" value="" placeholder="手机号/邮箱/用户名"/>
+                        <span><input type="password" name="upwd" id="upwd" value="" placeholder="请输入密码"/></span>
+                        <button id="login-flex12">登录</button>
+                        <p>
+                            <span>
+                                <label for="checkbox">
+                                    <input type="checkbox" name="checkbox" id="checkbox" value="" />自动登录
+                                </label>
+                            </span>
+                            <a href="javascript:;">忘记密码</a>
+                        </p>
+                        <a href="javascript:;" class="flex-login-img"></a>
+                        <div class="reg">
+                            没有账号? <a href="javascript:;">注册</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/axios.min.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>

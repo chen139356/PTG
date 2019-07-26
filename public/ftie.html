@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/demo.css"/>
+</head>
+<body> 
+
+<div id="list"></div>
+ <button id="tiez">我要发帖</button>
+    <div id="fav">
+        <a id="del" class="close" href="javascript:;">×</a>
+        <p class="txts">请输入内容</p>
+        <textarea id="content" class="comment" autocomplete="off"></textarea>
+        <p class="txts">选择图片</p>
+        <input id="imge" type="file" id="file" multiple value="imge.value"/>
+        <img src="" class="img"/>
+        <button id="yess">确认发布</button>
+    </div>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/ftie.js"></script>
+    <script src="js/axios.min.js"></script>
+
+    <script>
+
+            function getObjectURL(file){
+            var url =null;
+            if(window.createObjectURL !=undefined){
+                url=window.createObjectURL(file);
+            }else if(window.URL !=undefined){
+                url=window.URL.createObjectURL(file);
+            }else if(window.webkitURL!=undefined){
+                url=window.webkitURL.createObjectURL(file)
+            }
+            return url;
+        }
+        $("#file").change(function(){
+            var file=this.files[0];
+            var url=getObjectURL(file)
+
+            console.log(file)
+        })
+        
+    </script>
+</body>
+</html>
