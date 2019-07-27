@@ -8,7 +8,8 @@
 韩岗
 要负责接口和登录界面PPT制作
 数据库设计
-字段：  uname VARCHAR(32),
+字段： 
+  uname VARCHAR(32),
   upwd VARCHAR(32),
   email VARCHAR(64),
   phone VARCHAR(16), 
